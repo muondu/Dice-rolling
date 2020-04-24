@@ -1,15 +1,19 @@
 import random
-print("Today, we are going to play role the dice.")
-a = 1
-b = 6
-fistDice = print(random.randrange(a, b))
+import sys
 
-secondDice = print(random.randrange(a, b))
-d = input("Do you want to try again?  ")
+def mycode():
+	print("Today, we are going to play role the dice.")
 
-def whileloop():
-	while d == "yes":
-		print(c)
-	else:
-		print('Goodbye.')
-whileloop()
+	fistDice = print(random.randrange(1, 6))
+	secondDice = print(random.randrange(1, 6))
+
+	d = input("Do you want to try again. Please input yes or no?  ")
+
+	def whileloop():
+		while d == "yes":
+			mycode()
+		else:
+			print("Goodbye.")
+			sys.exit()
+	whileloop()
+mycode()
